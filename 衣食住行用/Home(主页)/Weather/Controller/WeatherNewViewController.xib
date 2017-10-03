@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeatherNewViewController">
+            <connections>
+                <outlet property="citySearch" destination="ggv-ud-Nso" id="ytc-hS-CU3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weekInfoTable" destination="ute-rd-vHP" id="5a3-T2-r6W"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="ggv-ud-Nso">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Ynn-sX-bQx"/>
+                    </constraints>
+                    <textInputTraits key="textInputTraits"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="1h0-4A-lW3"/>
+                    </connections>
+                </searchBar>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ute-rd-vHP">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="oyD-Z8-dxF"/>
+                        <outlet property="delegate" destination="-1" id="oe1-YC-8KH"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ggv-ud-Nso" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="2li-Sj-9AH"/>
+                <constraint firstItem="ute-rd-vHP" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gz1-E0-3jb"/>
+                <constraint firstAttribute="trailing" secondItem="ute-rd-vHP" secondAttribute="trailing" id="IZu-JY-PHC"/>
+                <constraint firstAttribute="trailing" secondItem="ggv-ud-Nso" secondAttribute="trailing" id="R3L-Me-6sg"/>
+                <constraint firstAttribute="bottom" secondItem="ute-rd-vHP" secondAttribute="bottom" id="Y5e-GY-yU4"/>
+                <constraint firstItem="ute-rd-vHP" firstAttribute="top" secondItem="ggv-ud-Nso" secondAttribute="bottom" id="hUA-hI-oox"/>
+                <constraint firstItem="ggv-ud-Nso" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="v8l-MZ-kdT"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+        </view>
+    </objects>
+</document>

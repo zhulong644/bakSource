@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TrainTicketView">
+            <connections>
+                <outlet property="dateButton" destination="gPs-iT-9jf" id="dk0-T9-U92"/>
+                <outlet property="outDayButton" destination="gPs-iT-9jf" id="WUy-Eu-wIx"/>
+                <outlet property="searchButton" destination="oIi-IJ-DWQ" id="tzV-pE-QrE"/>
+                <outlet property="startCity" destination="hsG-oX-g4A" id="i7m-xl-jhf"/>
+                <outlet property="toCiry" destination="zvq-kx-FPt" id="C48-AF-bXb"/>
+                <outlet property="view" destination="zj9-4Z-tmt" id="tta-ot-bN6"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zj9-4Z-tmt">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出发站 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilg-qE-4SD">
+                    <rect key="frame" x="33" y="15" width="151" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="YGH-WI-DSF"/>
+                        <constraint firstAttribute="width" constant="151" id="lgU-0G-zrB"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="城市名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hsG-oX-g4A" userLabel="出发站输入">
+                    <rect key="frame" x="166" y="15" width="121" height="37"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="6qJ-zh-wkI"/>
+                        <constraint firstAttribute="width" constant="121" id="yH0-Rf-b1o"/>
+                    </constraints>
+                    <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="终点站 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jrn-rR-P1P">
+                    <rect key="frame" x="33" y="85" width="151" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="151" id="KkF-Iv-JDf"/>
+                        <constraint firstAttribute="height" constant="37" id="gfe-kM-uXj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="城市名" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zvq-kx-FPt" userLabel="终点站输入">
+                    <rect key="frame" x="166" y="85" width="121" height="37"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="0aL-FU-4EY"/>
+                        <constraint firstAttribute="width" constant="121" id="i0U-cq-bnW"/>
+                    </constraints>
+                    <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="出发日 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNU-LV-0vH" userLabel="出发时间">
+                    <rect key="frame" x="33" y="155" width="151" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="151" id="Bv8-vv-PHm"/>
+                        <constraint firstAttribute="height" constant="37" id="POL-AN-jVV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIi-IJ-DWQ">
+                    <rect key="frame" x="33" y="225" width="254" height="37"/>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="4eU-JP-X5q"/>
+                    </constraints>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="ticketClick:" destination="-1" eventType="touchUpInside" id="ScW-fg-Bd0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPs-iT-9jf">
+                    <rect key="frame" x="166" y="155" width="121" height="37"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="66I-7R-mgC"/>
+                        <constraint firstAttribute="width" constant="121" id="o0L-FN-cf3"/>
+                    </constraints>
+                    <state key="normal" title="2015-12-31"/>
+                    <connections>
+                        <action selector="dateClick:" destination="-1" eventType="touchUpInside" id="6qW-ka-0PB"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="输入出发站，终点站，出发日，即可获得当日所有列车车次的余票信息。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wya-YD-NcD">
+                    <rect key="frame" x="33" y="295" width="254" height="56"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="IlP-e3-Exi"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="oIi-IJ-DWQ" firstAttribute="leading" secondItem="zj9-4Z-tmt" secondAttribute="leading" constant="33" id="4FM-UQ-mFb"/>
+                <constraint firstItem="gPs-iT-9jf" firstAttribute="top" secondItem="zvq-kx-FPt" secondAttribute="bottom" constant="33" id="8QT-5J-mo1"/>
+                <constraint firstItem="hsG-oX-g4A" firstAttribute="top" secondItem="zj9-4Z-tmt" secondAttribute="top" constant="15" id="FQN-EG-tjl"/>
+                <constraint firstItem="jrn-rR-P1P" firstAttribute="leading" secondItem="zj9-4Z-tmt" secondAttribute="leading" constant="33" id="Hdl-Mg-mLc"/>
+                <constraint firstItem="lNU-LV-0vH" firstAttribute="leading" secondItem="zj9-4Z-tmt" secondAttribute="leading" constant="33" id="IUP-XL-WeA"/>
+                <constraint firstAttribute="trailing" secondItem="hsG-oX-g4A" secondAttribute="trailing" constant="33" id="KfQ-kQ-DBu"/>
+                <constraint firstAttribute="trailing" secondItem="gPs-iT-9jf" secondAttribute="trailing" constant="33" id="Lvw-4b-MCY"/>
+                <constraint firstItem="Wya-YD-NcD" firstAttribute="leading" secondItem="zj9-4Z-tmt" secondAttribute="leading" constant="33" id="MjG-ta-8iJ"/>
+                <constraint firstItem="Wya-YD-NcD" firstAttribute="top" secondItem="oIi-IJ-DWQ" secondAttribute="bottom" constant="33" id="NJK-NV-Mmc"/>
+                <constraint firstItem="ilg-qE-4SD" firstAttribute="leading" secondItem="zj9-4Z-tmt" secondAttribute="leading" constant="33" id="UGi-3F-LTs"/>
+                <constraint firstAttribute="trailing" secondItem="Wya-YD-NcD" secondAttribute="trailing" constant="33" id="V5Z-ny-W1j"/>
+                <constraint firstItem="lNU-LV-0vH" firstAttribute="top" secondItem="jrn-rR-P1P" secondAttribute="bottom" constant="33" id="ZQb-mv-qS1"/>
+                <constraint firstItem="jrn-rR-P1P" firstAttribute="top" secondItem="ilg-qE-4SD" secondAttribute="bottom" constant="33" id="ZTd-d0-OmW"/>
+                <constraint firstAttribute="trailing" secondItem="oIi-IJ-DWQ" secondAttribute="trailing" constant="33" id="ahy-R3-fJK"/>
+                <constraint firstAttribute="trailing" secondItem="zvq-kx-FPt" secondAttribute="trailing" constant="33" id="eyf-wu-Nem"/>
+                <constraint firstItem="oIi-IJ-DWQ" firstAttribute="top" secondItem="lNU-LV-0vH" secondAttribute="bottom" constant="33" id="kHz-s6-bep"/>
+                <constraint firstItem="zvq-kx-FPt" firstAttribute="top" secondItem="hsG-oX-g4A" secondAttribute="bottom" constant="33" id="oh1-TV-sgm"/>
+                <constraint firstItem="ilg-qE-4SD" firstAttribute="top" secondItem="zj9-4Z-tmt" secondAttribute="top" constant="15" id="yhq-r3-7YI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="340" y="310"/>
+        </view>
+    </objects>
+</document>

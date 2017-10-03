@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="159" id="KGk-i7-Jjw" customClass="WeekCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="425" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="425" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloudy3.png" translatesAutoresizingMaskIntoConstraints="NO" id="ckb-Co-iPP">
+                        <rect key="frame" x="8" y="8" width="80" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="80" id="Nm6-Hs-dPL"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="88" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r85-OE-gBN">
+                        <rect key="frame" x="317" y="8" width="100" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="I6k-qH-6dq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                        <color key="textColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="星期一" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1WW-T1-g12">
+                        <rect key="frame" x="98" y="8" width="100" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="DX2-Is-lqP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2级东北风" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mJH-Sa-zy0">
+                        <rect key="frame" x="207" y="8" width="100" height="83"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="x9Q-uL-5lv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="ckb-Co-iPP" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="3m4-r1-GBU"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="ckb-Co-iPP" secondAttribute="bottom" id="8Sn-77-KP9"/>
+                    <constraint firstItem="r85-OE-gBN" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="8fh-xM-sSo"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="1WW-T1-g12" secondAttribute="bottom" id="IJb-hr-6NY"/>
+                    <constraint firstItem="mJH-Sa-zy0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="PmO-ge-mc4"/>
+                    <constraint firstItem="1WW-T1-g12" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="V8P-d3-y2j"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="mJH-Sa-zy0" secondAttribute="bottom" id="VlU-o1-Cvx"/>
+                    <constraint firstItem="1WW-T1-g12" firstAttribute="leading" secondItem="ckb-Co-iPP" secondAttribute="trailing" constant="10" id="jcG-1I-8T8"/>
+                    <constraint firstItem="r85-OE-gBN" firstAttribute="leading" secondItem="mJH-Sa-zy0" secondAttribute="trailing" constant="10" id="mWF-PY-8SI"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="r85-OE-gBN" secondAttribute="bottom" id="nbL-vx-AEa"/>
+                    <constraint firstItem="ckb-Co-iPP" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="rPj-M4-HH2"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="r85-OE-gBN" secondAttribute="trailing" id="y64-Lp-Odj"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="temInfo" destination="r85-OE-gBN" id="r8z-KF-N5G"/>
+                <outlet property="weatherImage" destination="ckb-Co-iPP" id="ViQ-vL-ufD"/>
+                <outlet property="weekNumber" destination="1WW-T1-g12" id="pxJ-38-l8I"/>
+                <outlet property="windInfo" destination="mJH-Sa-zy0" id="0Ct-sS-qEO"/>
+            </connections>
+            <point key="canvasLocation" x="282.5" y="239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="cloudy3.png" width="128" height="128"/>
+    </resources>
+</document>

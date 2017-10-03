@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BusLineView">
+            <connections>
+                <outlet property="busNumber" destination="MRE-4l-8t0" id="4QY-XA-cWX"/>
+                <outlet property="cityText" destination="c9g-93-4OF" id="c20-sf-blk"/>
+                <outlet property="searchButton" destination="xxF-yH-EMM" id="xiq-kc-4MK"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="所在城市 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ujk-1Z-WU6" userLabel="城市">
+                    <rect key="frame" x="33" y="15" width="151" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="0jg-Ra-fjg"/>
+                        <constraint firstAttribute="width" constant="151" id="hAO-zm-hXO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="城市名称" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="c9g-93-4OF" userLabel="城市输入">
+                    <rect key="frame" x="221" y="15" width="121" height="37"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="dmr-9S-o4r"/>
+                        <constraint firstAttribute="width" constant="121" id="yz3-Nb-ikO"/>
+                    </constraints>
+                    <color key="textColor" red="0.60000002384185791" green="0.40000000596046448" blue="0.20000000298023224" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="公交线路 :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCV-qG-Yf9" userLabel="公交线路">
+                    <rect key="frame" x="33" y="85" width="151" height="37"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="4g3-jY-HRX"/>
+                        <constraint firstAttribute="width" constant="151" id="V6m-B6-kN1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="公交线路" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="MRE-4l-8t0" userLabel="公交线路输入">
+                    <rect key="frame" x="221" y="85" width="121" height="37"/>
+                    <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="121" id="O0n-5q-keZ"/>
+                        <constraint firstAttribute="height" constant="37" id="g0Z-BY-9sX"/>
+                    </constraints>
+                    <color key="textColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xxF-yH-EMM">
+                    <rect key="frame" x="33" y="155" width="309" height="37"/>
+                    <color key="backgroundColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="37" id="1pg-rr-CTo"/>
+                    </constraints>
+                    <state key="normal" title="查询">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="busLineSearch:" destination="-1" eventType="touchUpInside" id="gjZ-fx-yJG"/>
+                    </connections>
+                </button>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="输入您所在的城市与想要乘坐的公交路线，即可查询到该公交路线的所有站点。" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YHs-90-gZb">
+                    <rect key="frame" x="33" y="225" width="309" height="100"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="O0u-60-rWp"/>
+                    </constraints>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="YHs-90-gZb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="1bR-iW-rMo"/>
+                <constraint firstAttribute="trailing" secondItem="YHs-90-gZb" secondAttribute="trailing" constant="33" id="2z6-Mz-kj0"/>
+                <constraint firstItem="c9g-93-4OF" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="7Af-GZ-G5z"/>
+                <constraint firstAttribute="trailing" secondItem="MRE-4l-8t0" secondAttribute="trailing" constant="33" id="ATK-lv-z6J"/>
+                <constraint firstItem="MRE-4l-8t0" firstAttribute="top" secondItem="c9g-93-4OF" secondAttribute="bottom" constant="33" id="GIg-bU-A0R"/>
+                <constraint firstItem="ujk-1Z-WU6" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="15" id="Mf4-hx-EuM"/>
+                <constraint firstItem="xxF-yH-EMM" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="UPC-cK-mSP"/>
+                <constraint firstItem="YHs-90-gZb" firstAttribute="top" secondItem="xxF-yH-EMM" secondAttribute="bottom" constant="33" id="a3d-ul-kwr"/>
+                <constraint firstItem="eCV-qG-Yf9" firstAttribute="top" secondItem="c9g-93-4OF" secondAttribute="bottom" constant="33" id="b6n-T9-ezp"/>
+                <constraint firstAttribute="trailing" secondItem="xxF-yH-EMM" secondAttribute="trailing" constant="33" id="llU-dk-i7u"/>
+                <constraint firstItem="ujk-1Z-WU6" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="men-3m-PPk"/>
+                <constraint firstItem="eCV-qG-Yf9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="33" id="nKL-W0-RXr"/>
+                <constraint firstItem="xxF-yH-EMM" firstAttribute="top" secondItem="eCV-qG-Yf9" secondAttribute="bottom" constant="33" id="qyc-1Y-t4O"/>
+                <constraint firstAttribute="trailing" secondItem="c9g-93-4OF" secondAttribute="trailing" constant="33" id="sgQ-sz-dEW"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="266" y="260"/>
+        </view>
+    </objects>
+</document>
